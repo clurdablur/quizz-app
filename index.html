@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wine Quiz</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Wine Quiz</h1>
+	<div id="content">
+		<div id="image_wrapper"><img width="300" heigth="800" class="image" src="winebottle.png" alt="winebottle"></div>
+		<div id="question_wrapper">
+
+			<h2 id="questionMain"></h2>
+			<div id="questionAnswer">
+				<input type="radio" name="option" class="option" value="0"><span></span><br>
+				<input type="radio" name="option" class="option" value="1"><span></span><br>
+				<input type="radio" name="option" class="option" value="2"><span></span><br>
+				<input type="radio" name="option" class="option" value="3"><span></span><br>	
+			</div>
+
+			<button id="nextquestion">Next Question</button><br>
+			
+		</div>
+		<div id="score_wrapper">
+			<h1>You're score is <span>score</span></h1>
+			<button id="restartquiz">Restart Quiz</button>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="quiz-app.js"></script>
+</body>
+</html>
