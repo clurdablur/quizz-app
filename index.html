@@ -3,13 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Wine Quiz</title>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <script src="node_modules/less/dist/less.min.js"></script>
+
 </head>
 <body>
 	<h1>Wine Quiz</h1>
 	<div id="content">
-		<div id="image_wrapper"><img width="300" heigth="800" class="image" src="winebottle.png" alt="winebottle"></div>
+
+		<div id="image_wrapper"><img width="300" heigth="800" class="image" src="images/winebottle.png" alt="winebottle"></div>
 		<div id="question_wrapper">
 
 			<h2 id="questionMain"></h2>
@@ -19,16 +22,15 @@
 				<input type="radio" name="option" class="option" value="2"><span></span><br>
 				<input type="radio" name="option" class="option" value="3"><span></span><br>	
 			</div>
-
-			<button id="nextquestion">Next Question</button><br>
+			<button class="button" id="nextquestion">Next Question</button><br>
 			
 		</div>
 		<div id="score_wrapper">
 			<h1>You're score is <span>score</span></h1>
-			<button id="restartquiz">Restart Quiz</button>
+			<button class="button" id="restartquiz">Restart Quiz</button>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="quiz-app.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
